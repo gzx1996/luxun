@@ -1,0 +1,50 @@
+{
+  "name": "luxun",
+  "description": "luxun",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "gzx1996",
+    "email": "1311167847@qq.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": "^10.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && npm run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^2.0.4",
+    "@feathersjs/errors": "^3.3.4",
+    "@feathersjs/express": "^1.2.7",
+    "@feathersjs/feathers": "^3.2.3",
+    "@feathersjs/socketio": "^3.2.7",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "helmet": "^3.14.0",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
